@@ -8,6 +8,7 @@ body {
   color: #black;
   background: white;
 }
+
 /* Link Styles */
 
 a {
@@ -45,17 +46,13 @@ a:hover {
 }
 .nav a {
   transition: all .5s;
-}
-.nav a:hover {
-  color: pink
-}
 
 nav.a:hover {
   color: deepred;
 }
 
 header {
-  text-align: center;
+  text-align: left;
   background: url('lustinglight.github.io/Photographs/Polaroids/A Queen's Dream.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
@@ -146,56 +143,4 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
-}
-
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-
-  .flex {
-      display: flex;
-      max-width: 1200px;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
-
-  header {
-    min-height: 450px;
-  }
-
-  .nav {
-    max-width: 1200px;
-  }
-
-  .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-  }
-
-  main {
-    padding-top: 50px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-
-  footer {
-    font-size: 12px;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-
-}
-
-h3{
-  color: hotpink;
-  letter-spacing: 1.5px;
-}
-
-.card-title {
-    text-align: center;
-    border: solid hotpink 3px;
-    border-radius: 15px;
-    margin-top: 15px;
 }
