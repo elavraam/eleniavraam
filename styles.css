@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Lucida Sans Unicode';
+  font-family: 'Athelas';
   color: #black;
   background: white;
 }
@@ -12,10 +12,10 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: deepred;
 }
 a:hover {
-  color: pink;
+  color: deepred;
 }
 
 /* Section Styles */
@@ -195,7 +195,7 @@ a.social:hover {
   }
 
   footer {
-    font-size: 1.3em;
+    font-size: 12px;
     max-width: 1200px;
     margin: 40px auto;
   }
@@ -212,10 +212,4 @@ h3{
     border: solid hotpink 3px;
     border-radius: 15px;
     margin-top: 15px;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
