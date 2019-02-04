@@ -29,7 +29,7 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
+  text-align: right;
 }
 .nav {
   display: flex;
@@ -49,7 +49,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: deepred
 }
 
 header {
