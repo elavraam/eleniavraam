@@ -15,7 +15,7 @@ a {
   color: black;
 }
 a:hover {
-  color: deepred;
+  color: pink;
 }
 
 /* Section Styles */
@@ -29,9 +29,9 @@ a:hover {
   text-align: center;
 }
 .nav {
-  display: flex;
+  display: fixed;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: 900;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -41,6 +41,7 @@ a:hover {
 }
 .nav li {
   padding: 5px 10px 10px 10px;
+  colour: black
 }
 .nav a {
   transition: all .5s;
@@ -211,4 +212,10 @@ h3{
     border: solid hotpink 3px;
     border-radius: 15px;
     margin-top: 15px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
