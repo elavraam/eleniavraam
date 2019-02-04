@@ -1,24 +1,21 @@
 /* Global Layout Set-up */
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Lucida Sans Unicode';
-  color: #222;
-  background: #f7f5f0;
+  color: #black;
+  background: white;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #0499ff;
+  color: black;
 }
 a:hover {
-  color: #6633ff;
+  color: deepred;
 }
 
 /* Section Styles */
