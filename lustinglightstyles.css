@@ -7,14 +7,31 @@ body {
   background-color: white;
   clear:both;
   position: static;
-  margin-top:150px;
+  margin-top:0px;
 }
 
+main {
+    padding-top: 150px;
+}
+
+footer {
+  display: block;
+  padding-top: 100px;
+  text-align: center;
+}
+/* Photograph styles */
+
+.musicimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+}
 .homeimage {
  display: block;
  margin-left: auto;
  margin-right: auto;
- padding-top: 150px;
+ padding-top: 0px;
 }
 
 .contactimage {
@@ -24,13 +41,19 @@ body {
   padding-top: 20px;
 }
 
+.mainpostpic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
 
 /* Navigation Bar Styles */
 
 ul {
   list-style-type: none;
   padding: 0;
-  position: fixed;
+  position: static;
   top: 5%;
   width: 98%;
 }
@@ -38,7 +61,8 @@ ul {
 li {
   display: inline;
   float: right;
-  font-weight: 600;
+  font-weight: 700;
+  padding-top: 50px;
 }
 
 a {
@@ -75,19 +99,24 @@ a:active {
 
 /* Text styles */
 h1{
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 700;
     margin-left: 1%;
+    padding-top: 50px;
 }
 
 h2 {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   text-align: center;
 }
 
-p {
-  font-size: 20px;
+.posttitle {
+  font-size: 24px;
   font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* Polaroids */
@@ -98,18 +127,14 @@ p {
     grid-template-rows: 550px 550px 550px 550px 550px;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+    padding-top: 50px;
   }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-div {
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
+  .polaroids {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  }
 
 /* Blog posts grid */
 
@@ -122,14 +147,31 @@ div {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  padding-top: 50px;
 }
 
 .griditem {
-  height: 550px;
-  flex-basis: 20%;
+  height: 600px;
+  flex-basis: 100%;
   -ms-flex: auto;
-  width: 259px;
+  width: 600px;
   position: relative;
-  padding: 10px;
+  padding-top: 1%;
   box-sizing: border-box;
+  object-fit: cover;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
