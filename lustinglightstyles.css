@@ -160,18 +160,22 @@ h2 {
   box-sizing: border-box;
   object-fit: cover;
 }
-/* Container holding the image and the text */
-.container {
-  position: relative;
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
 }
-
-/* Bottom right text */
-.text-block {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: black;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+@media(max-width: 1073px) {
+   .grid-item {
+    flex-basis: 33.33%;
+  }
 }
+@media(max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
