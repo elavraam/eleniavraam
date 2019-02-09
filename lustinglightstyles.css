@@ -136,6 +136,26 @@ h2 {
       object-fit: contain;
   }
 
+  @media(max-width: 1333px) {
+    .container {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 1073px) {
+     .container {
+      flex-basis: 33.33%;
+    }
+  }
+  @media(max-width: 815px) {
+    .container {
+      flex-basis: 50%;
+    }
+  }
+  @media(max-width: 555px) {
+    .container {
+      flex-basis: 100%;
+    }
+
 /* Blog posts grid */
 
 .blogposts {
@@ -160,33 +180,3 @@ h2 {
   box-sizing: border-box;
   object-fit: cover;
 }
-
-@media(max-width: 1333px) {
-  .li {
-    flex-basis: 100%;
-  }
-  .polaroids {
-      flex-basis: 100%;
-    }
-  }
-
-@media(max-width: 1073px) {
-
-  }
-}
-@media(max-width: 815px) {
-  .li {
-    flex-basis: 33.3%;
-    }
-    .polaroids {
-        flex-basis: 100%;
-      }
-}
-@media(max-width: 555px) {
-  .li {
-    flex-basis: 33.3%;
-    }
-    .polaroids {
-        flex-basis: 100%;
-      }
-  }
