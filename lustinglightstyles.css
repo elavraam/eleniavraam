@@ -162,21 +162,31 @@ h2 {
 }
 
 @media(max-width: 1333px) {
-  img {
+  .li {
     flex-basis: 100%;
   }
-}
+  .polaroids {
+      flex-basis: 100%;
+    }
+  }
+
 @media(max-width: 1073px) {
-   .img {
-    flex-basis: 75%;
+
   }
 }
 @media(max-width: 815px) {
-  .img {
-    flex-basis: 50%;
-  }
+  .li {
+    flex-basis: 33.3%;
+    }
+    .polaroids {
+        flex-basis: 100%;
+      }
 }
 @media(max-width: 555px) {
-  .img {
+  .li {
     flex-basis: 33.3%;
+    }
+    .polaroids {
+        flex-basis: 100%;
+      }
   }
