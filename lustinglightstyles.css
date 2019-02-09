@@ -162,21 +162,21 @@ h2 {
 }
 
 @media(max-width: 1333px) {
-  .grid-item {
+  img {
     flex-basis: 33.33%;
   }
 }
 @media(max-width: 1073px) {
-   .grid-item {
+   .img {
     flex-basis: 33.33%;
   }
 }
 @media(max-width: 815px) {
-  .grid-item {
+  .img {
     flex-basis: 50%;
   }
 }
-@media(max-width: 200px) {
-  .grid-item {
+@media(max-width: 555px) {
+  .img {
     flex-basis: 100%;
   }
