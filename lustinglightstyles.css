@@ -122,15 +122,13 @@ h2 {
 /* Polaroids */
 
   .container {
-      display: flex;
+      display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: 550px 550px 550px 550px 550px;
       grid-column-gap: 50px;
       grid-row-gap: 50px;
       padding-top: 50px;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-    }
+      }
 
     .polaroids {
         width: 100%;
