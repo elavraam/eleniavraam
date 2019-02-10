@@ -54,19 +54,19 @@ ul {
   list-style-type: none;
   padding: 0;
   position: static;
-  top: 5%;
+  top: 2%;
   width: 98%;
 }
 
 li {
-  display: inline;
+  display: block;
   float: right;
   font-weight: 700;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 a {
-  display: inline;
+  display: block;
   padding: 9px;
   background-color: white;
 }
