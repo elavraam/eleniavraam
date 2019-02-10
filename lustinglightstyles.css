@@ -127,13 +127,15 @@ h2 {
       grid-template-rows: 550px 550px 550px 550px 550px;
       grid-column-gap: 50px;
       grid-row-gap: 50px;
-      padding-top: 0px;
+      padding-top: 30px;
       }
 
     .polaroids {
         width: 100%;
         height: 100%;
         object-fit: contain;
+        padding-left: 15px;
+        padding-right: 15px;
       }
 
 /* Blog posts grid */
