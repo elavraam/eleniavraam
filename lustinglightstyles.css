@@ -125,8 +125,8 @@ h2 {
       display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: 550px 550px 550px 550px 550px;
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
       padding-top: 30px;
       }
 
