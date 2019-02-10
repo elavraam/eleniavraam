@@ -121,33 +121,34 @@ h2 {
 
 /* Polaroids */
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 550px 550px 550px 550px 550px;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding-top: 50px;
-  }
+  .container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: 550px 550px 550px 550px 550px;
+      grid-column-gap: 50px;
+      grid-row-gap: 50px;
+      padding-top: 50px;
+    }
 
-  .polaroids {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .polaroids {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
 /* Blog posts grid */
 
-/*.blogposts {
-    max-width: 1335px;
-    margin: 0 auto;
-}*/
+.blogposts {
+    max-width: 1950px;
+    margin: auto;
+    padding-top: 30px;
+}
 
 .blogpostsrow {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .griditem {
@@ -156,7 +157,7 @@ h2 {
   -ms-flex: auto;
   width: 600px;
   position: relative;
-  padding-top: 1%;
+  padding-top: 0px;
   box-sizing: border-box;
   object-fit: cover;
 }
