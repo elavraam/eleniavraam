@@ -26,7 +26,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
-  border: 20px solid white;
+  
 }
 
 .homeimage {
@@ -163,5 +163,4 @@ h2 {
   padding-top: 0px;
   box-sizing: border-box;
   object-fit: cover;
-  border: 20px solid white;
 }
