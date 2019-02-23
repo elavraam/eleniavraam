@@ -3,7 +3,7 @@ body {
   font-family: 'Athelas';
   font-size: 22px;
   color: black;
-  background-color: #edc4cb;
+  background-color: #edc4cd;
   clear:both;
   position: static;
   margin-top:0px;
@@ -15,7 +15,8 @@ main {
 
 footer {
   display: block;
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   text-align: center;
   font-size: 14px;
 }
@@ -141,7 +142,7 @@ h2 {
 /* Blog posts grid */
 
 .blogposts {
-    max-width: 1950px;
+    max-width: 1500px;
     margin: auto;
     padding-top: 30px;
 }
@@ -154,13 +155,13 @@ h2 {
 }
 
 .griditem {
-  height: 600px;
+  height: 550px;
   flex-basis: 100%;
   -ms-flex: auto;
-  width: 600px;
+  width: 550px;
   position: relative;
   padding-top: 0px;
   box-sizing: border-box;
   object-fit: cover;
   border: 20px solid white;
-}
+  }
