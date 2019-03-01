@@ -26,7 +26,10 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0px;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+
 }
 
 .homeimage {
@@ -63,11 +66,12 @@ ul {
 li {
   display: block;
   float: right;
+  font-size: 18px;
   font-weight: 700;
   padding-top: 10px;
 }
 
-a {
+a.navigation {
   display: block;
   padding: 9px;
   background-color: #edc4cb;
@@ -101,21 +105,21 @@ a:active {
 
 /* Text styles */
 h1{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     margin-left: 1%;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 0.8em;
   font-weight: 700;
   text-align: center;
 }
 
 .posttitle {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -127,41 +131,49 @@ h2 {
   .container {
       display: grid;
       grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 550px 550px 550px 550px 550px;
-      grid-column-gap: 0px;
-      grid-row-gap: 50px;
-      padding-top: 30px;
+      grid-column-gap: 10%;
+      grid-row-gap: 20px;
+      padding-top: 2%;
     }
 
     .polaroids {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        align-content: stretch;
     }
 
-/* Blog posts grid */
 
-.blogposts {
-    max-width: 1500px;
-    margin: auto;
-    padding-top: 30px;
-}
+    /* Blog posts flexbox */
 
-.blogpostsrow {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  padding-top: 0px;
-}
 
-.griditem {
-  height: 550px;
-  flex-basis: 100%;
-  -ms-flex: auto;
-  width: 550px;
-  position: relative;
-  padding-top: 0px;
-  box-sizing: border-box;
-  object-fit: cover;
-  border: 20px solid white;
-  }
+    .blogpostscontainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: stretch;
+
+    }
+
+    .blogpostscontainer div {
+      flex: 30%;
+      padding: 1vw;
+    }
+
+    .blogpostscontainer a {
+      background-color: #edc4cb;
+      }
+
+    .griditem {
+      box-sizing: border-box;
+      border: 10px solid white;
+      }
+
+    .griditem {
+      width: 100%;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media (max-width: 400px) {
+      .blogpostscontainer div {
+        flex: 100%;
+        max-width: 100%;
