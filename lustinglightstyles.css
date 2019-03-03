@@ -1,7 +1,6 @@
 *
 body {
   font-family: 'Athelas';
-  font-size: 22px;
   color: black;
   background-color: #edc4cd;
   clear:both;
@@ -10,7 +9,7 @@ body {
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 10vw;
 }
 
 footer {
@@ -58,7 +57,7 @@ footer {
 ul {
   list-style-type: none;
   padding: 0;
-  position: static;
+  position: relative;
   top: 2%;
   width: 98%;
 }
@@ -66,14 +65,14 @@ ul {
 li {
   display: block;
   float: right;
-  font-size: 18px;
-  font-weight: 700;
-  padding-top: 10px;
+  font-size: 2.5vw;
+  font-weight: 600;
+  padding-top: 0.7vw;
 }
 
 a.navigation {
   display: block;
-  padding: 9px;
+  padding: 1vw;
   background-color: #edc4cb;
 }
 
@@ -93,37 +92,52 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #AD1818;
+  color: #a81035;
   text-decoration: none;
 }
 
 /* selected link */
 a:active {
-  color: #BD2020;
+  color: #d190a1;
   text-decoration: none;
 }
 
 /* Text styles */
 h1{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 3vw;
+    font-weight: 600;
     margin-left: 1%;
-    padding-top: 30px;
+    padding-top: 1.5vw;
 }
 
 h2 {
-  font-size: 0.8em;
-  font-weight: 700;
+  font-size: 2.5vw;
+  font-weight: 600;
   text-align: center;
 }
 
 .posttitle {
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  line-height: 0.8;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 0.8;
+}
+
+.gridtitle {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      padding: 0.3vw;
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-style: italic;
+      color: black;
 }
 
 /* Polaroids */
@@ -165,11 +179,15 @@ h2 {
 
     .griditem {
       box-sizing: border-box;
-      border: 10px solid white;
+      border: 0em solid white;
       }
 
     .griditem {
       width: 100%;
+    }
+
+    .griditem:hover {
+      opacity: 0.5;
     }
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
