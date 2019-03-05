@@ -131,15 +131,19 @@ h2 {
       width: 100%;
       height: auto;
       padding: 0.3vw;
-      margin-top: 0.5vw;
+      margin-top: 0.7vw;
       margin-bottom: 0.5vw;
-      font-size: 14px;
+      font-size: 0.9em;
       letter-spacing: 1px;
       font-weight: 700;
       font-style: italic;
       color: black;
 }
 
+.gridtitle:hover {
+  color: #a81035;
+  text-decoration: none;
+}
 /* Polaroids */
 
   .container {
