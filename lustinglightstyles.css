@@ -5,44 +5,39 @@ body {
   background-color: #edc4cd;
   clear:both;
   position: static;
-  margin-top:0px;
+  margin-top: 0.5em;
 }
 
 main {
-    padding-top: 10vw;
+    margin-top: 8em;
 }
 
 footer {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 1em;
+  padding-bottom:1em;
   text-align: center;
-  font-size: 14px;
+  font-size: 1em;
+  font-weight: 500;
 }
+
 /* Photograph styles */
 
 .musicimage {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  max-height: auto;
-  object-fit: contain;
-
+  width: 98%;
+  height: auto;
+  padding-left: 1%;
+  padding-right: 1%;
 }
+
 
 .homeimage {
- display: block;
- margin-left: auto;
- margin-right: auto;
- padding-top: 0px;
-}
-
-.contactimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
+ margin: 0 auto;
+ padding-bottom: 1em;
+ width: 100%;
+ margin-bottom: -5%;
 }
 
 .mainpostpic {
@@ -54,25 +49,23 @@ footer {
 
 /* Navigation Bar Styles */
 
-ul {
+ul.navigation {
   list-style-type: none;
   padding: 0;
-  position: relative;
-  top: 2%;
   width: 98%;
 }
 
-li {
+li.navigation {
   display: block;
   float: right;
-  font-size: 2.5vw;
+  font-size: 1.8em;
   font-weight: 600;
-  padding-top: 0.7vw;
+
 }
 
 a.navigation {
   display: block;
-  padding: 1vw;
+  padding: 0.5em;
   background-color: #edc4cb;
 }
 
@@ -96,33 +89,40 @@ a:hover {
   text-decoration: none;
 }
 
+.signature {
+  display: inline-block;
+  margin-left: 1%;
+  max-width: 25%;
+  margin-bottom: -2%;
+
+}
 /* selected link */
-a:active {
-  color: #d190a1;
+a:selected {
+  color: #fff;
   text-decoration: none;
 }
 
 /* Text styles */
 h1{
-    font-size: 3vw;
-    font-weight: 600;
-    margin-left: 1%;
-    padding-top: 1.5vw;
+    font-size: 2.3vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 0.9;
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: 3vw;
   font-weight: 600;
   text-align: center;
 }
 
 .posttitle {
-    font-size: 1em;
-    font-weight: 700;
+    font-size: 2vw;
+    font-weight: 800;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    line-height: 0.8;
+    padding-bottom: 1vw;
+    line-height: 0.7;
+
 }
 
 .gridtitle {
@@ -130,72 +130,156 @@ h2 {
       text-align: center;
       width: 100%;
       height: auto;
-      padding: 0.3vw;
-      margin-top: 0.7vw;
-      margin-bottom: 0.5vw;
-      font-size: 0.9em;
+      padding: 0.2vw;
+      margin-top: 1vw;
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
       letter-spacing: 1px;
-      font-weight: 700;
-      font-style: italic;
-      color: black;
+      font-weight: 600;
+      font-style: none;
 }
 
 .gridtitle:hover {
   color: #a81035;
   text-decoration: none;
 }
-/* Polaroids */
 
-  .container {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-column-gap: 10%;
-      grid-row-gap: 20px;
-      padding-top: 2%;
-    }
+    /* Blog posts grid */
 
-    .polaroids {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        align-content: stretch;
-    }
-
-
-    /* Blog posts flexbox */
-
-
-    .blogpostscontainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: stretch;
-
-    }
-
-    .blogpostscontainer div {
-      flex: 30%;
-      padding: 1vw;
-    }
-
-    .blogpostscontainer a {
-      background-color: #edc4cb;
+      .blogpostscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
-    .griditem {
-      box-sizing: border-box;
-      border: 0em solid white;
-      }
-
-    .griditem {
-      width: 100%;
-    }
-
-    .griditem:hover {
-      opacity: 0.5;
-    }
-
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media (max-width: 400px) {
       .blogpostscontainer div {
-        flex: 100%;
-        max-width: 100%;
+        flex: 3 29%;
+        padding: 0.5em;
+      }
+
+      }
+      .blogpostscontainer a {
+        background-color: #edc4cb;
+        }
+
+      .griditem {
+          max-width: 100%;
+          height: auto;
+          align-content: center;
+          box-sizing: border-box;
+          border: 0.3em solid white;
+        }
+
+
+      .griditem:hover {
+        opacity: 0.5;
+      }
+
+      /* Polaroids */
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            justify-content: space-evenly;
+            grid-column-gap: 1em;
+            grid-row-gap: 2em;
+            padding-top: 2%;
+            align-content: center;
+            }
+
+          .polaroids {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            align-content: center;
+          }
+
+    /* Contact page styles */
+
+    .contactimage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1%;
+      width: 50%
+    }
+
+    ul.contact {
+      display: block;
+      list-style-position: inside;
+      padding: 0% 0 0 5%;
+      list-style: none;
+    }
+
+    .contact li {
+      font-size: 1em;
+      font-weight: 800;
+    }
+
+    .contact a {
+      display: inline-block;
+      min-height: 20px;
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      padding: 0 0 10px 30px;
+      margin: 2% 0% 0 0;
+    }
+
+    .contact li.mail a {
+      background-image: url('img/mail.png');
+    }
+
+    .contact li.twitter a {
+      background-image: url('img/twitter.png');
+    }
+
+    .contact li.instagram a {
+      background-image: url('img/instagram.png');
+    }
+
+@media screen and (max-width:600px) {
+  /* Navigation Bar Styles */
+
+  ul.navigation {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  li.navigation {
+    display: block;
+    float: right;
+    font-size: 0.8em;
+    font-weight: 600;
+
+  }
+
+  a.navigation {
+    display: block;
+    padding: 0.5em;
+    background-color: #edc4cb;
+  }
+
+  .blogpostscontainer {
+    margin-top: -4em;
+  }
+  .blogpostscontainer div {
+    flex: 1 100%;
+    padding: 0.3em;
+  }
+
+  .gridtitle {
+    font-size: 1em;
+    padding-top: 0.3em;
+  }
+
+  .signature {
+    min-width: 35%;
+  }
+
+  .contactimage {
+    width: 100%;
+    margin-top: -20%;
+  }
+}
