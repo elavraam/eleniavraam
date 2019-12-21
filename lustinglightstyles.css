@@ -138,10 +138,13 @@ h1{
 }
 
 .gridtitle:hover {
-  color: #a81035;
-  text-decoration: none;
-}
+    color: #a81035;
+    text-decoration: none;
+  }
 
+ p{
+   text-align: center;
+    }
     /* Blog posts grid */
 
       .blogpostscontainer {
@@ -191,6 +194,71 @@ h1{
             align-content: center;
           }
 
+      /* Prints */
+
+      .printscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .printscontainer div {
+        flex: 3 29%;
+        padding: 0.5em;
+      }
+
+      .printscontainer a {
+        background-color: #edc4cb;
+        }
+
+      .printsgriditem {
+          max-width: 100%;
+          height: auto;
+          align-content: center;
+          box-sizing: border-box;
+        }
+
+      .printsgriditem:hover {
+        opacity: 0.5;
+      }
+
+      .printsgridtitle {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0.2vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .printsimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        max-width: 100%;
+      }
+
+      .printstitle {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 0.3;
+        font-style: italic;
+        margin-bottom: -0.1em;
+      }
+      .printstext {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 0.8;
+        font-style: italic;
+      }
     /* Contact page styles */
 
     .contactimage {
@@ -247,7 +315,7 @@ h1{
 
   .navigation li{
     display: inline;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     margin-right: 1em;
   }
@@ -300,7 +368,7 @@ h1{
   }
 
   .navigation li {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 0;
     margin: 0;
     margin-bottom: 1em;
@@ -309,5 +377,69 @@ h1{
   .contact li {
     padding: 0.3em;
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .printscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .printscontainer div {
+    flex: 3 33%;
+    padding: 1em;
+  }
+
+  .printscontainer a {
+    background-color: #edc4cb;
+    }
+
+  .printsgriditem {
+      max-width: 33%;
+      height: auto;
+      align-content: center;
+      box-sizing: border-box;
+      margin: 1.5em;
+    }
+
+  .printsgridtitle {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 0.2vw;
+    margin-left: 3.5em;
+    margin-top: 1vw;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: none;
+  }
+
+  .printsimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    max-width: 33%;
+  }
+
+  .printstitle {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 0.3;
+    font-style: italic;
+    margin-bottom: -0.1em;
+  }
+  .printstext {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 0.8;
+    font-style: italic;
   }
 }
