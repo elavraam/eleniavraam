@@ -236,7 +236,7 @@ p{
         }
 
       .printsgriditem {
-          max-width: 96%;
+          max-width: 98%;
           height: auto;
           align-content: center;
           box-sizing: border-box;
@@ -258,6 +258,7 @@ p{
         letter-spacing: 1px;
         font-weight: 600;
         font-style: italic;
+        line-height: normal;
       }
 
       .printsimage {
@@ -275,12 +276,13 @@ p{
         line-height: 0.3;
         font-style: italic;
         margin-bottom: -0.1em;
+        line-height: 0.8;
       }
       .printstext {
         text-align: center;
         font-size: 1em;
         font-weight: 500;
-        line-height: 0.8;
+        line-height: normal;
         font-style: italic;
       }
     /* Contact page styles */
