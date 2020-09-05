@@ -330,6 +330,12 @@ p{
       background-image: url('img/instagram.png');
     }
 
+    .contact li.mailinglist a {
+      background-image: url('img/mailing.png');
+      min-height: 30px;
+      background-size: 35px 35px;
+    }
+
 @media screen and (max-width: 750px) {
 
   /* Navigation Bar Styles */
