@@ -1,6 +1,6 @@
   *
   body {
-    font-family: Big Caslon, serif;
+    font-family:  times, serif;
     color: black;
     background-color: #F7ECE1;
     margin-top: 0.5em;
@@ -109,7 +109,7 @@
   .signature {
     display: block;
     align-content: center;
-    max-width: 15%;
+    max-width: 18%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -191,6 +191,9 @@
       text-decoration: none;
     }
 
+  .poem {
+    line-height: 0.8em;
+  }
   /* Blog posts grid */
 
   .blogpostscontainer {
@@ -404,7 +407,7 @@
   }
 
   .posttitle {
-    font-size: 0.7em;
+    font-size: 0.9em;
     line-height: normal;
   }
 
@@ -413,7 +416,7 @@
   }
 
   .signature {
-    min-width: 25%;
+    min-width: 30%;
   }
 
   .contactimage {
@@ -463,6 +466,9 @@ p {
     font-size: 1em;
   }
 }
+  .posttitle {
+    line-height:0.7;
+   }
 h2 {
   font-size: 0.9em;
   font-weight: 600;
@@ -470,7 +476,7 @@ h2 {
   line-height: 1.1;
 }
 h3 {
-  font-size: 1em;
-  line-height: normal;
+  font-size: 0.9em;
+  line-height: 1em;
   justify-content: center;
 }
